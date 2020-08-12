@@ -1,0 +1,121 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2rem;
+    color: #926239;
+    line-height: 1;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#main {
+    background-image: url(https://source.unsplash.com/random);
+    /*background-image: url('../img/background.jpg');*/
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    color: #d9dde2;
+}
+
+#main h1 {
+    font-size: 4rem;
+    line-height: 1.5;
+    opacity: 0;
+}
+
+#main h1.load {
+    opacity: 1;
+}
+
+#main p {
+    font-size: 2rem;
+    line-height: 1.5;
+    opacity: 0;
+}
+
+#main div {
+    line-height: 1.5;
+}
+
+#main p.load {
+    opacity: 1;
+}
+
+.button {
+    font-size: 18px;
+    text-decoration: none;
+    color: #926239;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
+#main .button {
+    color: #d9dde2;
+    opacity: 0;
+}
+
+#weather {
+    color: #d9dde2;
+}
+
+#main .button.load{
+    opacity: 1;
+}
+
+.link-container .button {
+    color: #d9dde2;
+    line-height: 1.5;
+}
+
+#quote-box {
+    background: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+#quote {
+    padding: 10px;
+    line-height: 1.2;
+}
+
+#author {
+    padding: 10px;
+}
+
+#weather {
+    position: relative;
+}
+
+#weather span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
